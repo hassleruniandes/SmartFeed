@@ -1,0 +1,23 @@
+<main class="pageLogin d-flex justify-content-center align-items-center flex-wrap">
+  <div class="container text-center d-flex justify-content-center align-items-center flex-column">
+    <h1 class="pageLogin__title mt-4">INICIO DE SESIÓN</h1>
+    <!-- <app-text [fontSize]="'24px'"  [color]="'white'">Welcome to HeymusicApp</app-text> -->
+    <form class="pageLogin__form mt-3">
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Usuario" placeholder="Ingrese usuario o correo"></app-input>
+      </div>
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Clave" placeholder="Ingrese su clave"></app-input>
+      </div>
+
+      <a class="pageLogin__btnLogin--olvido d-block mt-4 mb-5">Olvidó su contraseña o usuario?</a>
+
+      <!--<app-input placeholder="Ingrese su clave"></app-input>-->
+      <button (click)="login()" class="pageLogin__btnLogin"><p class="pageLogin__btnLogin--text">ENVIAR</p></button>
+
+      <a class="pageLogin__btnLogin--registrarse d-block mt-4">REGISTRARSE</a>
+    </form>
+  </div>
+</main>

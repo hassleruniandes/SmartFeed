@@ -1,0 +1,5 @@
+<button class="btn btnFav" (click)="onClick()">
+  <img
+    [src]="isFavorite ? '/assets/delete-star-icon.png' : '/assets/star-icon.png'" [style.height]="'50px'"
+    [alt]="isFavorite ? 'Remove song from favs': 'Add song to favs'">
+</button>

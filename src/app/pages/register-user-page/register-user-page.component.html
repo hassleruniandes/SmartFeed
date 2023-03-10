@@ -1,0 +1,41 @@
+<main class="pageLogin d-flex justify-content-center align-items-center flex-wrap">
+  <div class="container text-center d-flex justify-content-center align-items-center flex-column">
+    <h1 class="pageLogin__title mt-4">REGISTRO DE USUARIO</h1>
+    <!-- <app-text [fontSize]="'24px'"  [color]="'white'">Welcome to HeymusicApp</app-text> -->
+    <form class="pageLogin__form mt-3">
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Nombres" placeholder="Ingrese sus nombres"></app-input>
+      </div>
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Apellidos" placeholder="Ingrese sus apellidos"></app-input>
+      </div>
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Direccion" placeholder="Lugar de residencia"></app-input>
+      </div>
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Telefono" placeholder="Número de contacto principal"></app-input>
+      </div>
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Correo" placeholder="Correo Principal"></app-input>
+      </div>
+
+      <div class="pageLogin__form--input">
+        <app-input titleInput="Fecha de Nacimiento" placeholder="08/06/1995"></app-input>
+        <span class="small-date d-block w-100 text-start ml-2 mt-1">DD/MM/YYYY</span>
+      </div>
+
+
+      <span class="pageLogin__btnLogin--olvido d-block mt-4 mb-5">¿Desea recibir notificaciones?</span>
+
+      <!--<app-input placeholder="Ingrese su clave"></app-input>-->
+      <button  class="pageLogin__btnLogin"><p class="pageLogin__btnLogin--text">ENVIAR</p></button>
+
+
+    </form>
+  </div>
+</main>

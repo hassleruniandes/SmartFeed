@@ -1,0 +1,7 @@
+<div class="imgPlayer">
+  <img [alt]="altImage" class="imgPlayer__bgImage card-img-top" [src]="srcImage"/>
+  <button class="imgPlayer__btnPlay" (click)="onClick()">
+    <img alt="player" class="imgPlayer__btnPlay__imagePlayer" [src]="isPlaying ? '/assets/pauseIcon.png': '/assets/playIcon.png'"/>
+  </button>
+</div>
+<ng-content></ng-content>

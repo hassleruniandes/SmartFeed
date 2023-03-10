@@ -1,0 +1,23 @@
+.inputFeed{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  &__title{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #FFFBFE;
+    padding-inline: 5px;
+  }
+  input{
+    border: 1px solid #79747E;
+    border-radius: 4px;
+    background: #F3F6F9;
+    border: none;
+    color: #545454;
+    font-size: 16px;
+    padding: 1rem;
+  }
+}

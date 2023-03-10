@@ -1,0 +1,5 @@
+<section *ngIf="items.length > 0" class="carouselTracks py-3">
+  <a class="carouselTracks__link" [routerLink]="linkCarousel">{{titleCarousel}}</a>
+  <app-track-grid class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-4" [title]="'titleCarousel'" [tracks]="items"></app-track-grid>
+  <hr class="text-white">
+</section>
