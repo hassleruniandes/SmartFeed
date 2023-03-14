@@ -4,7 +4,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SideBarComponent } from './molecules/side-bar/side-bar.component';
-import { HeaderComponent } from './organisms/header/header.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LayoutComponent } from './templates/layout/layout.component';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
@@ -26,7 +25,6 @@ import { ProximaComidaPageComponent } from './pages/proxima-comida-page/proxima-
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     SideBarComponent,
     LayoutComponent,
     HomePageComponent,
