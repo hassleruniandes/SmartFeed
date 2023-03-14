@@ -13,6 +13,7 @@ export class LayoutComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    //this.showSideBar = false;
     // this.router.events.subscribe(() => {
     //   if (window.innerWidth < 700) this.showSideBar = false;
     // });
@@ -20,7 +21,20 @@ export class LayoutComponent implements OnInit {
 
   @HostListener('window:resize')
   onResize() {
-    // this.isMoreThan700 = window.innerWidth > 700;
+    this.isMoreThan700 = window.innerWidth > 700;
+    if(!this.isMoreThan700){
+      this.showSideBar = false;
+    }else{
+      this.showSideBar = true;
+    }
+  }
+
+  procesaToggle(statusSideBar: boolean){
+    this.showSideBar = statusSideBar
+  }
+
+  actionMenu(){
+    (this.showSideBar ? this.showSideBar = false: this.showSideBar = true)
   }
 
   onClick(isClickOutside = false) {

@@ -1,20 +1,9 @@
-<!-- <main [ngClass]="'layout'">
-  <div [ngClass]="'layout_header-container'">
-    <app-header></app-header>
-
-  </div>
-  <div [ngClass]="'layout__content'" >
-    <ng-content></ng-content>
-  </div>
-</main> -->
-
-
 <div class="wrapper">
-  <nav id="pass-nav" class="sidebar" aria-label="nav-header">
-    <app-side-bar></app-side-bar>
+  <nav *ngIf="showSideBar" id="pass-nav" class="sidebar" aria-label="nav-header">
+    <app-side-bar (toggleSideBar)="procesaToggle($event)" [showSideBar]="showSideBar" ></app-side-bar>
   </nav>
-  <div class="main-panel">
-   <app-header></app-header>
+  <img *ngIf="!showSideBar" (click)="actionMenu()" class="button_menu" src="/assets/button_dashboard.png"/>
+  <div class="main-panel {{showSideBar ? '': 'not-padding'}}">
    <div class="main-content">
     <div class="body">
       <div class="container my-4">

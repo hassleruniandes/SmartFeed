@@ -1,0 +1,19 @@
+<main class="pageNotifications d-flex justify-content-center align-items-center flex-wrap">
+  <div class="container text-center d-flex justify-content-center align-items-center position-relative flex-column">
+
+    <h1 class="pageNotifications__title my-4">PRÓXIMA COMIDA</h1>
+    <p class="pageNotifications__description">Su mascota se ha alimentado recientemente, por favor indique el periodo de tiempo que desea que su mascota sea alimentada.</p>
+    <!-- <app-text [fontSize]="'24px'"  [color]="'white'">Welcome to HeymusicApp</app-text> -->
+    <form class="pageNotifications__form my-5">
+
+
+      <div class="range-wrap d-flex">
+        <input disabled #ref (change)="setBubble(ref.value)" type="range" class="range">
+        <output [value]="bubble" class="bubble"></output>
+      </div>
+      <!--<app-input placeholder="Ingrese su clave"></app-input>-->
+      <button  (click)="congrats()"  class="pageNotifications__btnRegisterUser"><p class="pageNotifications__btnRegisterUser--text">ACEPTAR</p></button>
+
+    </form>
+  </div>
+</main>

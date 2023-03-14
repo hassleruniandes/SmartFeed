@@ -3,20 +3,16 @@ import { map, Observable, of } from 'rxjs';
 import { Router } from '@angular/router'
 
 @Component({
-  selector: 'app-login-page',
-  templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.scss']
+  selector: 'app-congrats-page',
+  templateUrl: './congrats-page.component.html',
+  styleUrls: ['./congrats-page.component.scss']
 })
-export class LoginPageComponent implements OnInit {
+export class CongratsPageComponent implements OnInit {
 
   constructor(private _router: Router) { }
 
-  login(){
+  avanzar(){
     this._router.navigate(['/home']);
-  }
-
-  signup(){
-    this._router.navigate(['/signup']);
   }
 
   ngOnInit(): void {

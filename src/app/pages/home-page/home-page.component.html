@@ -1,7 +1,49 @@
 <app-layout>
-  <div class="container py-lg-5">
-    <div class="container-fluid">
-     <p>DASHBOARD WORKS</p>
+
+  <h1 class="homePage__title text-center mb-4">DASHBOARD</h1>
+
+  <br>
+
+  <div class="row homePage">
+    <div class="col-lg-10 m-auto col-sm-12 m-5">
+
+      <div (click)="monitor()" class="homePage__cardAlimentador card flex-row">
+        <img class="homePage__cardAlimentador--leftImage card-img-left example-card-img-responsive" src="/assets/image_avatar.png"/>
+        <div class="card-body">
+          <h4 class="homePage__cardAlimentador--title card-title h5 h4-sm">Alimentador 1</h4>
+          <p class="homePage__cardAlimentador--subtitle card-text">Activo</p>
+        </div><img class="homePage__cardAlimentador--rightImage card-img-sm-right example-card-img-responsive" src="/assets/default_alimentador.png"/>
+      </div>
+
+      <div (click)="monitor()" class="homePage__cardAlimentador card flex-row">
+        <img class="homePage__cardAlimentador--leftImage card-img-left example-card-img-responsive" src="/assets/image_avatar.png"/>
+        <div class="card-body">
+          <h4 class="homePage__cardAlimentador--title card-title h5 h4-sm">Alimentador 2</h4>
+          <p class="homePage__cardAlimentador--subtitle card-text">Activo</p>
+        </div><img class="homePage__cardAlimentador--rightImage card-img-sm-right example-card-img-responsive" src="/assets/default_alimentador.png"/>
+      </div>
+
+      <div (click)="monitor()" class="homePage__cardAlimentador card flex-row">
+        <img class="homePage__cardAlimentador--leftImage card-img-left example-card-img-responsive" src="/assets/image_avatar.png"/>
+        <div class="card-body">
+          <h4 class="homePage__cardAlimentador--title card-title h5 h4-sm">Alimentador 3</h4>
+          <p class="homePage__cardAlimentador--subtitle card-text">Inactivo</p>
+        </div><img class="homePage__cardAlimentador--rightImage card-img-sm-right example-card-img-responsive" src="/assets/default_alimentador.png"/>
+      </div>
+
+      <div (click)="monitor()" class="homePage__cardAlimentador card flex-row">
+        <img class="homePage__cardAlimentador--leftImage card-img-left example-card-img-responsive" src="/assets/image_avatar.png"/>
+        <div class="card-body">
+          <h4 class="homePage__cardAlimentador--title card-title h5 h4-sm">Alimentador 4</h4>
+          <p class="homePage__cardAlimentador--subtitle card-text">Inactivo</p>
+        </div><img class="homePage__cardAlimentador--rightImage card-img-sm-right example-card-img-responsive" src="/assets/default_alimentador.png"/>
+      </div>
+
+    </div>
+    <div class="col-lg-8 col-xs-8 align-self-end">
+
     </div>
   </div>
+
 </app-layout>
+

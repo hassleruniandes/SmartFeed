@@ -1,0 +1,47 @@
+<app-layout>
+
+  <button (click)="goDashboard()" class="backButton position-absolute  btn btn-danger float-start d-flex">REGRESAR</button>
+
+  <h1 class="homePage__title text-center mb-4">DASHBOARD</h1>
+
+  <br>
+
+  <div class="row homePage">
+    <div class="col-lg-10 m-auto col-sm-12 m-5">
+
+      <div class="homePage__cardAlimentador">
+        <div class="homePage__cardAlimentador--card card flex-row">
+          <img class="homePage__cardAlimentador--leftImage card-img-left example-card-img-responsive" src="/assets/image_avatar.png"/>
+          <div class="card-body">
+            <h4 class="homePage__cardAlimentador--title card-title h5 h4-sm">Alimentador 1</h4>
+            <p class="homePage__cardAlimentador--subtitle card-text">Activo</p>
+          </div>
+        </div>
+
+        <div class="homePage__cardAlimentador--imageFeeder">
+          <img width="100%" class="card-img-left example-card-img-responsive" src="/assets/monitor.png"/>
+        </div>
+
+        <div class="homePage__cardAlimentador--card card d-block">
+          <div class="card-body ">
+            <h5 class="homePage__cardAlimentador--title2 card-title">Hades</h5>
+            <h5 class="homePage__cardAlimentador--subtitle2 card-subtitle">Canino</h5>
+            <p class="card-text">Alimentador para la mascota Hades, con alimento alto en proteinas.</p>
+            <div class="buttons d-flex justify-content-end">
+              <a (click)="goDashboard()" class="btn btn-primary homePage__btnDanger mx-2">CANCELAR</a>
+              <a (click)="goEditFeeder()"  class="btn btn-primary homePage__btnAction mx-2">CONFIGURAR</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="col-lg-8 col-xs-8 align-self-end">
+
+    </div>
+  </div>
+
+</app-layout>
+

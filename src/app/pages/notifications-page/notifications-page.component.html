@@ -1,0 +1,43 @@
+<main class="pageNotifications d-flex justify-content-center align-items-center flex-wrap">
+  <div class="container text-center d-flex justify-content-center align-items-center position-relative flex-column">
+    <button (click)="goDashboard()" class="pageNotifications--backButton position-absolute  btn btn-danger float-start d-flex">IR AL DASHBOARD</button>
+    <h1 class="pageNotifications__title my-4">CONFIGURACIÓN DE NOTIFICACIONES</h1>
+    <p class="pageNotifications__description">Realice la configuración de las notificaciones por medio de las alarmas, se recomienda no trabajar con valores mínimos.</p>
+    <!-- <app-text [fontSize]="'24px'"  [color]="'white'">Welcome to HeymusicApp</app-text> -->
+    <form class="pageNotifications__form my-5">
+
+
+      <div class="range-wrap d-flex">
+        <div class="left">
+          <label class="d-block mx-3 text-end">Alimento</label>
+        </div>
+        <div class="right">
+          <input disabled #ref (change)="setBubble(ref.value)" type="range" class="range">
+          <output [value]="bubble" class="bubble"></output>
+        </div>
+      </div>
+      <div class="range-wrap d-flex">
+        <div class="left">
+          <label class="d-block mx-3 text-end">Agua</label>
+        </div>
+        <div class="right">
+          <input disabled #ref (change)="setBubble(ref.value)" type="range" class="range">
+          <output [value]="bubble" class="bubble"></output>
+        </div>
+      </div>
+      <div class="range-wrap d-flex">
+        <div class="left">
+          <label class="d-block mx-3 text-end">Sensor de proximidad</label>
+        </div>
+        <div class="right">
+          <input disabled #ref (change)="setBubble(ref.value)" type="range" class="range">
+          <output [value]="bubble" class="bubble"></output>
+        </div>
+      </div>
+
+      <!--<app-input placeholder="Ingrese su clave"></app-input>-->
+      <button  (click)="welcome()"  class="pageNotifications__btnRegisterUser"><p class="pageNotifications__btnRegisterUser--text">ACEPTAR</p></button>
+
+    </form>
+  </div>
+</main>

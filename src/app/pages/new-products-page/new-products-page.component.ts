@@ -11,8 +11,11 @@ export class NewProductsPage implements OnInit {
 
   constructor(private _router: Router) { }
 
-  login(){
-    this._router.navigate(['/login']);
+  pet(){
+    this._router.navigate(['/register-pet']);
+  }
+  alimentador(){
+    this._router.navigate(['/register-feeder']);
   }
 
   ngOnInit(): void {

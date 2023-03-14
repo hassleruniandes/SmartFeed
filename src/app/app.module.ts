@@ -15,6 +15,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { InputComponent } from './atoms/input/input.component';
 import { RegisterUserPageComponent } from './pages/register-user-page/register-user-page.component';
+import { RegisterPetPageComponent } from './pages/register-pet-page/register-pet-page.component';
+import { RegisterFeederComponent } from './pages/register-feeder/register-feeder.component';
+import { RegisterFeederEditComponent } from './pages/register-feeder-edit/register-feeder-edit.component';
+import { CongratsPageComponent } from './pages/congrats-page/congrats-page.component';
+import { MonitorPageComponent } from './pages/monitor-page/monitor-page.component';
+import { NotificationsPageComponent } from './pages/notifications-page/notifications-page.component';
+import { ProximaComidaPageComponent } from './pages/proxima-comida-page/proxima-comida-page.component';
 
 
 @NgModule({
@@ -28,8 +35,15 @@ import { RegisterUserPageComponent } from './pages/register-user-page/register-u
     WelcomePageComponent,
     InitialPageComponent,
     LoginPageComponent,
+    RegisterPetPageComponent,
+    RegisterFeederComponent,
+    RegisterFeederEditComponent,
     NewProductsPage,
     InputComponent,
+    CongratsPageComponent,
+    MonitorPageComponent,
+    NotificationsPageComponent,
+    ProximaComidaPageComponent,
     RegisterUserPageComponent
   ],
   imports: [

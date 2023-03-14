@@ -3,15 +3,18 @@ import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-register-pet-page',
-  templateUrl: './register-user-page.component.html',
-  styleUrls: ['./register-user-page.component.scss']
+  templateUrl: './register-feeder.component.html',
+  styleUrls: ['./register-feeder.component.scss']
 })
-export class RegisterUserPageComponent implements OnInit {
+export class RegisterFeederComponent implements OnInit {
 
   constructor(private _router: Router) { }
 
   welcome(){
     this._router.navigate(['/welcome']);
+  }
+  goDashboard(){
+    this._router.navigate(['/home']);
   }
 
   ngOnInit(): void {

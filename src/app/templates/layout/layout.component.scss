@@ -1,11 +1,6 @@
-
-
 .main-panel {
-  background: rgb(92,34,55);
-background: linear-gradient(180deg, rgba(92,34,55,1) 7%, rgba(37,18,11,1) 24%);
-  //padding-top: 130px;
-  position: absolute;
-  right: 0;
+  background: rgba(203,203,210,.15);
+  position: relative;
   z-index: 2;
   float: right;
   width: calc(100% - 280px);
@@ -13,20 +8,21 @@ background: linear-gradient(180deg, rgba(92,34,55,1) 7%, rgba(37,18,11,1) 24%);
   overflow: auto;
   max-height: 100%;
   height: 100%;
-
 }
 
-@media (max-width: 768px) {
-  .main-panel{
-    width: 100%;
-  }
+.button_menu{
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 40PX;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10000;
 }
 
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 992px) {
-
+.main-panel.not-padding{
+  width: 100% !important;
 }
-/* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1200px) {
-
+.main-panel .main-content {
+  padding: 40px 15px;
 }

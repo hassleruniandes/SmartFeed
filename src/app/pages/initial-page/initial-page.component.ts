@@ -3,7 +3,7 @@ import { map, Observable, of } from 'rxjs';
 import { Router } from '@angular/router'
 
 @Component({
-  selector: 'app-initial-page',
+  selector: 'app-congrats-page',
   templateUrl: './initial-page.component.html',
   styleUrls: ['./initial-page.component.scss']
 })

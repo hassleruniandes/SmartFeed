@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
-
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -9,39 +8,65 @@ import { Router } from '@angular/router';
 })
 export class SideBarComponent implements OnInit {
 
-  @Input() showSideBar = false;
-  linksMenu: Array<any> = [];
+  linksMenu: Array<any> = []
 
+  @Input() showSideBar: boolean = true;
 
-  ngOnInit(): void {
+  @Output() toggleSideBar = new EventEmitter<boolean>();
 
-    this.linksMenu = [
-      {
-        name: 'Home',
-        icon: 'bi bi-house',
-        router: [`/`]
-      },
-      {
-        name: 'Recomendados',
-        icon: 'bi bi-dribbble',
-        router: [`/recommends`]
-      },
-      {
-        name: 'Favorites',
-        icon: 'bi bi-dribbble',
-        router: [`/favorites`]
-      },
-      {
-        name: 'Logout',
-        icon: 'bi-box-arrow-right',
-        router: ['/logout']
-      }
-    ]
+  actionMenu(){
+
+    if(this.showSideBar){
+      this.showSideBar = false;
+    }else{
+      this.showSideBar = true;
+    }
+
+    this.toggleSideBar.emit(this.showSideBar);
 
   }
 
-  logout() {
-    localStorage.removeItem('tokenHeyMussic');
+  constructor(
+    private router: ActivatedRoute
+  ) { }
+
+  ngOnInit(): void {
+
+
+    this.linksMenu = [
+      {
+        name: 'NUEVA MASCOTA',
+        icon: 'bi bi-house',
+        protected: false,
+        show: true,
+        router: 'register-pet',
+        className: 'text-white'
+      },
+      {
+        name: 'NUEVO ALIMENTADOR',
+        icon: 'bi bi-dribbble',
+        protected: true,
+        show: true,
+        router: 'register-feeder',
+        className: 'text-white'
+      },
+      {
+        name: 'NOTIFICACIONES',
+        icon: 'bi bi-cash-coin',
+        protected: false,
+        show: true,
+        router: 'notifications',
+        className: 'text-white'
+      },
+      {
+        name: 'CERRAR SESIÓN',
+        icon: 'bi-box-arrow-right',
+        show: true,
+        router: 'login',
+        className: 'text-custom-danger'
+      }
+    ]
+
   }
 
 }

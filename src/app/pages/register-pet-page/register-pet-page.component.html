@@ -1,0 +1,50 @@
+<main class="pageRegisterPet d-flex justify-content-center align-items-center flex-wrap">
+  <div class="container text-center d-flex justify-content-center align-items-center position-relative flex-column">
+    <button (click)="goDashboard()" class="pageRegisterPet--backButton position-absolute  btn btn-danger float-start d-flex">IR AL DASHBOARD</button>
+    <h1 class="pageRegisterPet__title mt-4 mb-3">REGISTRO DE MASCOTA</h1>
+    <p class="pageRegisterPet__description">Registre su mascota con los datos necesarios para poder brindarle nuestro mejor servicio.</p>
+    <!-- <app-text [fontSize]="'24px'"  [color]="'white'">Welcome to HeymusicApp</app-text> -->
+    <form class="pageRegisterPet__containerForm mt-3 mb-4">
+
+      <div class="pageRegisterPet__containerForm--form">
+
+        <div class="pageRegisterPet__containerForm--form--left">
+          <img alt="register-feeder" class="pb-1" width="100%" src="/assets/registerpet.png">
+        </div>
+        <div class="pageRegisterPet__containerForm--form--rigth">
+          <div class="pageRegisterPet__containerForm--form--input">
+            <app-input titleInput="Nombre" placeholder="Ingrese el nombre de la mascota"></app-input>
+          </div>
+
+          <div class="pageRegisterPet__containerForm--form--input">
+            <app-input titleInput="Raza" placeholder="Ingrese la raza de la mascota"></app-input>
+          </div>
+
+          <div class="pageRegisterPet__containerForm--form--input">
+            <app-input titleInput="Peso" placeholder="Ingrese peso de la mascota"></app-input>
+          </div>
+
+          <div class="pageRegisterPet__containerForm--form--input">
+            <app-input titleInput="Altura" placeholder="Ingrese altura de la mascota"></app-input>
+          </div>
+
+          <div class="pageRegisterPet__containerForm--form--input">
+            <app-input titleInput="Género" placeholder="Ingrese género de la mascoa"></app-input>
+          </div>
+
+          <div class="pageRegisterPet__containerForm--form--input mb-4">
+            <app-input titleInput="Año de nacimiento" placeholder="XXXX"></app-input>
+            <span class="small-date d-block w-100 text-start ml-2 mt-1">Año de nacimiento aproximado</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--<app-input placeholder="Ingrese su clave"></app-input>-->
+      <button  (click)="welcome()"  class="pageRegisterPet__btnRegisterPet"><p class="pageRegisterPet__btnRegisterPet--text">ENVIAR</p></button>
+
+
+    </form>
+  </div>
+</main>
