@@ -7,7 +7,6 @@ import { SideBarComponent } from './molecules/side-bar/side-bar.component';
 import { HeaderComponent } from './organisms/header/header.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LayoutComponent } from './templates/layout/layout.component';
-import { LinksListComponent } from './molecules/links-list/links-list.component';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 import { InitialPageComponent } from './pages/initial-page/initial-page.component';
 import { NewProductsPage } from './pages/new-products-page/new-products-page.component';
@@ -28,7 +27,6 @@ import { ProximaComidaPageComponent } from './pages/proxima-comida-page/proxima-
   declarations: [
     AppComponent,
     HeaderComponent,
-    LinksListComponent,
     SideBarComponent,
     LayoutComponent,
     HomePageComponent,
