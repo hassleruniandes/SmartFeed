@@ -2,7 +2,7 @@
   <nav *ngIf="showSideBar" id="pass-nav" class="sidebar" aria-label="nav-header">
     <app-side-bar (toggleSideBar)="procesaToggle($event)" [showSideBar]="showSideBar" ></app-side-bar>
   </nav>
-  <img *ngIf="!showSideBar" (click)="actionMenu()" class="button_menu" src="/assets/button_dashboard.png"/>
+  <img *ngIf="!showSideBar" (click)="actionMenu()" class="button_menu" src="assets/button_dashboard.png"/>
   <div class="main-panel {{showSideBar ? '': 'not-padding'}}">
    <div class="main-content">
     <div class="body">

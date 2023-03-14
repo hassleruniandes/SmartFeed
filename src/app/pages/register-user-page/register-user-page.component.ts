@@ -13,6 +13,9 @@ export class RegisterUserPageComponent implements OnInit {
   welcome(){
     this._router.navigate(['/welcome']);
   }
+  login(){
+    this._router.navigate(['/login']);
+  }
 
   ngOnInit(): void {
   }
