@@ -17,6 +17,9 @@ export class RegisterPetPageComponent implements OnInit {
   goDashboard(){
     this._router.navigate(['/home']);
   }
+  goFeeder(){
+    this._router.navigate(['/register-feeder']);
+  }
 
   ngOnInit(): void {
   }

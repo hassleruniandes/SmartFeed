@@ -11,7 +11,7 @@ export class RegisterFeederComponent implements OnInit {
   constructor(private _router: Router) { }
 
   welcome(){
-    this._router.navigate(['/welcome']);
+    this._router.navigate(['/notifications']);
   }
   goDashboard(){
     this._router.navigate(['/home']);
